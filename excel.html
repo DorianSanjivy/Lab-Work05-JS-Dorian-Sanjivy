@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Excel</title> 
+    <link rel="stylesheet" href="css/styles.css">
+</head> 
+<body> 
+    <header> 
+        <nav> 
+            <ul> 
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="excel.html">Excel</a></li> 
+            </ul> 
+        </nav> 
+    </header> 
+ 
+    <main> 
+        <form id="main_form" name="mainform"> 
+                <label >Enter your numbers separated by space</label>
+                <input type="text" id="numbers">
+                <br>
+                <input type="radio" id="total" name="Calculation" checked>
+                <label >AutoSum</label>
+                <br>
+                <input type="radio" id="average" name="Calculation">
+                <label>Average</label>
+                <br>
+                <input type="radio" id="maximum" name="Calculation">
+                <label >Max</label>
+                <br>
+                <input type="radio" id="minimum" name="Calculation">
+                <label>Min</label>
+
+                <div id="buttons">
+                    <input type="button" onclick="myExcelCalc();" value="Calculate">
+                </div>
+        </form> 
+ 
+        <div id="output"> 
+           
+        </div> 
+    </main> 
+ 
+    <footer>  
+    ILAC & EFREI Partnership- HTML, CSS, and JavaScript Main Lab-work - Dorian Sanjivy
+    </footer> 
+    <script src="js/script.js"></script>
+</body> 
+</html> 

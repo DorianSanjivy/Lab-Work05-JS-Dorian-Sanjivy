@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Index</title> 
+    <link rel="stylesheet" href="css/styles.css">
+</head> 
+<body> 
+    <header> 
+        <nav> 
+            <ul> 
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="excel.html">Excel</a></li> 
+            </ul> 
+        </nav> 
+    </header> 
+ 
+    <main> 
+        <form id="main_form" name="mainform" onsubmit="return false"> 
+                <legend>Personal Information:</legend>
+                <label>First Name:</label>
+                <input maxlength="25" type="text" id="first_name" ><br><br>
+                <label>Last Name:</label>
+                <input maxlength="25" type="text"  id="last_name"><br><br>
+                <label>Email:</label>
+                <input maxlength="35" type="email" id="email"><br><br>
+                <label>Address:</label>
+                <input maxlength="25" type="text" id="address"><br><br>
+                <label>City:</label>
+                <input maxlength="25" type="text" id="city"><br><br>
+                <label>Province:</label>
+                <input maxlength="25" type="text" id="province"><br><br>
+
+                <label> Type of Membership : </label>
+				<input type="radio" name="Membership" id="btn1" checked value="Premium Membership" > 
+				<label for="btn1">Premium Membership</label>
+				<input type="radio" name="Membership" id="btn2" value="Standard Membership" > 
+				<label for="btn2">Standard Membership</label>
+				<input type="radio" name="Membership" id="btn3" value="Basic Membership" > 
+				<label for="btn3">Basic Membership</label>
+                
+                <div id="buttons">
+                    <input type="button" onclick="userForm();" value="Send">
+                    <input type="reset" value="Cancel">    
+                </div>
+        </form> 
+ 
+        <div id="output"> 
+        </div> 
+    </main> 
+ 
+    <footer>
+            Copyright © 2022 ILAC and EFREI Paris – HTML-CSS major lab-work - created by: Dorian SANJIVY - All rights reserved 
+    </footer> 
+    <script src="js/script.js"></script>
+</body> 
+</html> 
